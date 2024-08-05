@@ -8,7 +8,7 @@ function App() {
 
   const handleRoast = async () => {
     try {
-      const response = await axios.post('https://YOUR_API_URL/api/roast', { username });
+      const response = await axios.post('https://roast-ig-profile-api.vercel.app/', { username });
       setRoast(response.data.message);
     } catch (error) {
       setRoast('Terjadi kesalahan.');
